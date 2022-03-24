@@ -10,10 +10,12 @@ temp=100
 choice=0
 x=50
 x1,y=pyautogui.size()
+#@jit(target ="cuda")                        
 def third():
     pyautogui.moveTo(x1*(xList[8]/w),y*(yList[8]/h))
+#@jit(target ="cuda")                        
 def drag():
-    pyautogui.drag(x1*(xList[8]/w),y*(yList[8]/h),1,button="left")        
+    pyautogui.click(x1*(xList[8]/w),y*(yList[8]/h),1,button="left")        
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
