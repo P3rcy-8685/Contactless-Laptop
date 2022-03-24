@@ -1,4 +1,4 @@
-# Hands-free-laptop
+# Contactless Laptop
 ## Project Description 
 This is an introductory idea (or more of a concept) on how can a contactless laptop may work. For starters I have included just 3 things. Volume control, Show desktop and mouse control. It has the following dependencies. 
 - opencv-python (For computer Vision)
