@@ -10,6 +10,8 @@ temp=100
 choice=0
 x=50
 x1,y=pyautogui.size()
+
+# ok retarded you
 def third():
     pyautogui.moveTo(x1*(xList[8]/w),y*(yList[8]/h))
 def drag():
